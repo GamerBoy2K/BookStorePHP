@@ -46,3 +46,80 @@ body{
 h3{
     font-weight: 500;
 }
+
+
+/*Footer Part*/
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-details h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.footer-details p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+
+}
+
+.footer-end{
+    background: #1e1e1e;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 14px;
+    word-spacing: 2px;
+
+}
+
+.footer-end span{
+    text-transform: uppercase;
+    
+}
