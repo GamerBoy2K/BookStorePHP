@@ -1,0 +1,211 @@
+body{
+    background-color: #d0d0d0;
+    /*display: flex;*/
+}
+
+.log{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*Nav bar design*/
+
+nav{
+    background: #1e1e1e;
+    color: #d0d0d0;
+
+}
+
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight : 600;
+    line-height : 70px;
+    padding-left : 60px;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    float: left ;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    border-radius : 0 5px;
+    box-shadow: 0 5px 0 5px #33ffff,
+                0 5px 0 5px#66ffff;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: epx;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top : -70px;
+    left: 150px;
+}
+
+.bannerImg{
+    width: 95%;
+    max-width: 100%;
+    padding: 0% 2.5% 0% 2.5%;
+    max-height: 50%;
+}
+
+.newBooks{
+    padding: 20px;
+}
+
+.bookItems{
+    display: grid;
+}
+
+.bookDetails{
+    max-height: 350px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.bookImgContainer{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.bookImg{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+h3{
+    font-weight: 500;
+}
+
+
+/*Footer Part*/
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-details h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.footer-details p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+
+}
+
+.footer-end{
+    background: #1e1e1e;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 14px;
+    word-spacing: 2px;
+
+}
+
+.footer-end span{
+    text-transform: uppercase;
+
+}
