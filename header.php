@@ -15,7 +15,7 @@
         <input type="checkbox" id="show-menu">
         <label for="show-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
         <div class="content">
-        <div class="logo"><a href="#">Book Me</a></div>
+        <div class="logo"><a href="#">Last Chapter</a></div>
             <ul class="links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -59,6 +59,6 @@
             <button type="submit" class="go-icon"><i class="fa fa-long-arrow-right"></i></button>
         </form>
 
-        <a href="#" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>
+        <a href="./userLogin.php" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>
         </nav>
     </div>

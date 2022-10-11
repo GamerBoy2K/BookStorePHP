@@ -14,6 +14,9 @@ body{
     background: #171c24;
     position: fixed;
     width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
   }
   .wrapper nav{
     position: relative;
@@ -301,6 +304,9 @@ footer{
     width: 100%;
     padding-top: 40px;
     color: white;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .footer-details{

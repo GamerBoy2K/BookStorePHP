@@ -1,7 +1,7 @@
 
 <?php include 'header.php';?>
 
-    <div class="mainPage" style="padding-top: 80px;>
+    <div class="mainPage" style="padding-top: 80px;">
         <div class="log">
             <?php
                 echo "Checking the PHP\nHello";
