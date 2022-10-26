@@ -142,10 +142,10 @@ button{
         <div class="shape"></div>
     </div>
     <form>
-        <h3>User Login Here</h3>
+        <h3>Admin Login Here</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email" id="username">
+        <input type="text" placeholder="User Name" id="username">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
@@ -153,10 +153,10 @@ button{
         <button>Log In</button>
 
         <div class="signup">
-            <a href="#">Don't have an account? Sign Up now</a>
+            <a href="#">Forgot details? Email Us</a>
         </div>
         <div class="social">
-            <a href="./adminLogin.php" style="text-decoration: none;"><div class="go"><i class="fa fa-user"></i>  Admin</div></a>
+            <a href="./userLogin.php" style="text-decoration: none;"><div class="go"><i class="fa fa-user"></i>  User</div></a>
             <a href="#" style="text-decoration: none;"><div class="fb"><i class="fa fa-users"></i>  Seller</div></a>
         </div>
     </form>
