@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
     if(($password==$cpassword) && ($alreadyUser==false)){
-        $insert_sql="INSERT INTO `user` (`user_id`, `email_id`, `password`) VALUES (NULL, `$username`, `$password` )";
+        $insert_sql="INSERT INTO `user` (`user_id`, `email_id`, `password`) VALUES (NULL, '$username', '$password' )";
         $results=mysqli_query($conn,$insert_sql);
 
         if($results){
