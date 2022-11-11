@@ -15,9 +15,9 @@
         <input type="checkbox" id="show-menu">
         <label for="show-menu" class="menu-icon"><i class="fa fa-bars"></i></label>
         <div class="content">
-        <div class="logo"><a href="#">Last Chapter</a></div>
+        <div class="logo"><a href="index.php">Last Chapter</a></div>
             <ul class="links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li>
                 <a href="#" class="desktop-link">Features</a>
