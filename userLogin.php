@@ -136,24 +136,57 @@ button{
 
     </style>
 </head>
+
+
+<?php
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        include 'dbConnect.php';
+        $username=$_POST["username"];
+        $password=$_POST["password"];
+
+        $userSQL="SELECT * from `user` where email_id='$username' and password='$password'";
+        $loginResult=mysqli_query($conn,$userSQL);
+
+        $userRow=mysqli_num_rows($loginResult);
+
+        if($userRow==1){
+
+            session_start();
+            $_SESSION["username"]=$username;
+            header("location: welcome.php");
+
+        }
+        else{
+            echo"<div style='padding-top:10vh;color:red;'>
+            <h3>Error! Invalid Input</h3>
+            </div>";
+        }
+    }
+
+?>
+
+
+
+
 <body>
     <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" > 
         <h3>User Login Here</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email" id="username">
+        <input type="text" placeholder="Email" id="username" name="username">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+        <input type="password" placeholder="Password" id="password" name="password">
 
         <button>Log In</button>
 
         <div class="signup">
-            <a href="#">Don't have an account? Sign Up now</a>
+            <a href="./userRegistration.php">Don't have an account? Sign Up now</a>
         </div>
         <div class="social">
             <a href="./adminLogin.php" style="text-decoration: none;"><div class="go"><i class="fa fa-user"></i>  Admin</div></a>

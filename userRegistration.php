@@ -10,18 +10,39 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $alreadyUser=false;
 
+    $fetchUser="SELECT * from `user` where email_id='$username'";
+    $userResult=mysqli_query($conn,$fetchUser);
+    $userRow=mysqli_num_rows($userResult);
+
+    if($userRow!=0){
+        $alreadyUser=true;
+        echo"<div style='padding-top:10vh;color:red;'>
+            
+            <h3>Error! Already an user</h3>
+            
+            </div>";
+    }
 
     if(($password==$cpassword) && ($alreadyUser==false)){
+        
         $insert_sql="INSERT INTO `user` (`user_id`, `email_id`, `password`) VALUES (NULL, '$username', '$password' )";
         $results=mysqli_query($conn,$insert_sql);
 
         if($results){
-            echo"User added done";
+            echo"<div style='padding-top:10vh;color:green;'>
+            
+            <h3>User added</h3>
+            
+            </div>";
         }else{
             die("Error" . mysqli_connect_error());
         }
-    }else{
-        echo"Password Mismatch or Already have an account";
+    }if($password!=$cpassword){
+        echo"<div style='padding-top:10vh;color:red;'>
+            
+            <h3>Error! Password missmatched!</h3>
+            
+            </div>";
     }
 
 }
