@@ -54,10 +54,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         margin-top: 100px;
 
     }
-
-    label{
-        padding-top: 25px;
-    }
 </style>
 
 

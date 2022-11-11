@@ -154,6 +154,7 @@ button{
 
             session_start();
             $_SESSION["username"]=$username;
+            $_SESSION["logged"]=true;
             header("location: welcome.php");
 
         }

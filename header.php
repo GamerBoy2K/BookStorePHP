@@ -59,6 +59,15 @@
             <button type="submit" class="go-icon"><i class="fa fa-long-arrow-right"></i></button>
         </form>
 
-        <a href="./userLogin.php" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>
+
+        <?php 
+            session_start();
+            if(isset($_SESSION["logged"])){
+                echo '<a href="./welcome.php" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>';
+            }else{echo '<a href="./userLogin.php" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>';
+            }
+        ?>
+        <!--<a href="./userLogin.php" ><i class="fa fa-user-circle" style="color: white; padding-right: 1.5rem;"></i></a>-->    
+    
         </nav>
     </div>
