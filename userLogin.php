@@ -60,7 +60,7 @@ form{
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
@@ -159,7 +159,7 @@ button{
 
         }
         else{
-            echo"<div style='padding-top:10vh;color:red;'>
+            echo"<div style='padding-top:10vh;text-align: center;color:red;'>
             <h3>Error! Invalid Input</h3>
             </div>";
         }

@@ -60,7 +60,7 @@ form{
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
@@ -136,19 +136,52 @@ button{
 
     </style>
 </head>
+
+
+
+<?php
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        include 'dbConnect.php';
+        $username=$_POST["username"];
+        $password=$_POST["password"];
+
+        $userSQL="SELECT * from `admin` where user_name='$username' and password='$password'";
+        $loginResult=mysqli_query($conn,$userSQL);
+       
+        $userRow=mysqli_num_rows($loginResult);
+
+        if($userRow==1){
+
+            session_start();
+            $_SESSION["username"]=$username;
+            $_SESSION["adminLogged"]=true;
+            header("location: adminPannel.php");
+
+        }
+        else{
+            echo"<div style='padding-top:10vh;text-align: center;color:red;'>
+            <h3>Error! Invalid Input</h3>
+            </div>";
+        }
+    }
+
+?>
+
+
 <body>
     <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" > 
         <h3>Admin Login Here</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="User Name" id="username">
+        <input type="text" placeholder="Email" id="username" name="username">
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+        <input type="password" placeholder="Password" id="password" name="password">
 
         <button>Log In</button>
 

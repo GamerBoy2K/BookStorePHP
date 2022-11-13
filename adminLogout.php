@@ -1,15 +1,15 @@
 <?php
     session_start();
 
-    if($_SESSION["logged"]==true){
+    if($_SESSION["adminLogged"]==true){
         // Unset all of the session variables.
         $_SESSION = array();
 
         // Finally, destroy the session.
         session_destroy();
-        header("location: index.php");
+        header("location: adminLogin.php");
     }else{
-        header("location: userLogin.php");
+        header("location: adminLogin.php");
 
     }
 
