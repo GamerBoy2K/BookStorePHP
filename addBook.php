@@ -70,9 +70,10 @@
                 }
             }
         } else {
-            echo "Sorry, there was no file.";
-            $insert_sql="INSERT INTO `product` (`product_id`, `title`, `price`, `file_name`) VALUES (NULL, '$product_title', '$product_price', 'void.jpg' )";
+            $insert_sql="INSERT INTO `product` (`title`, `price`) VALUES ('$product_title', '$product_price')";
             $results=mysqli_query($conn,$insert_sql);
+            echo "Sorry, there was no file.";
+            
         }
         
     }
