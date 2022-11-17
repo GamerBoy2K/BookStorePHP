@@ -69,14 +69,14 @@
                     <div class="bookDetails">
                     <div class="bookImgContainer">
                         <div class="bookImg">
-                            <img src="./upload/'.$row[3].'" alt="" style="height: 150px; width: 150px;">
+                            <img src="./'.$row[3].'" alt="" style="height: 150px; width: 150px;">
                         </div>
                     </div>
                     <div class="bookName">
                         '.$row[1].'
                     </div>
                     <div class="bookPrice">
-                        '.$row[2].'
+                        INR: '.$row[2].'
                     </div>
                 </div>
                     ' ;
