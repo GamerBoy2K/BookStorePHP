@@ -269,7 +269,7 @@ body{
 }
 
 .bookItems{
-    display: grid;
+    display: flex;
 }
 
 .bookDetails{
