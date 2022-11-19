@@ -68,14 +68,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <h3>User Registration Here</h3>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email" id="username" name="username" minlength="3" maxlength="20">
+        <label for="username" >Username</label>
+        <input type="text" placeholder="Email" id="username" name="username" minlength="3" maxlength="20" required>
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" name="password" minlength="3" maxlength="30">
+        <label for="password" >Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" minlength="3" maxlength="30" required>
 
-        <label for="cpassword">Confirm Password</label>
-        <input type="password" placeholder="Retype your Password" id="cpassword" name="cpassword" maxlength="30">
+        <label for="cpassword" >Confirm Password</label>
+        <input type="password" placeholder="Retype your Password" id="cpassword" name="cpassword" maxlength="30" required>
 
         <button>Sign Up</button>
 

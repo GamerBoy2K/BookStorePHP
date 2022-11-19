@@ -177,11 +177,11 @@ button{
     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" > 
         <h3>Admin Login Here</h3>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email" id="username" name="username">
+        <label for="username" >Username</label>
+        <input type="text" placeholder="Email" id="username" name="username" required>
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" name="password">
+        <label for="password" >Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" required>
 
         <button>Log In</button>
 
