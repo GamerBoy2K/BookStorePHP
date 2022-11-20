@@ -65,20 +65,23 @@
                 $result=mysqli_query($conn,$all_books_sql);
 
                 while ($row = mysqli_fetch_array($result))  {
+                    
                     echo '
-                    <div class="bookDetails">
-                    <div class="bookImgContainer">
-                        <div class="bookImg">
-                            <img src="./'.$row[3].'" alt="" style="height: 150px; width: 150px;">
+                    <a href="./productDetails.php?product='.$row[0].'">
+                        <div class="bookDetails">
+                            <div class="bookImgContainer">
+                                <div class="bookImg">
+                                    <img src="./'.$row[3].'" alt="" style="height: 150px; width: 150px;">
+                                </div>
+                            </div>
+                            <div class="bookName">
+                                '.$row[1].'
+                            </div>
+                            <div class="bookPrice">
+                                INR: '.$row[2].'
+                            </div>
                         </div>
-                    </div>
-                    <div class="bookName">
-                        '.$row[1].'
-                    </div>
-                    <div class="bookPrice">
-                        INR: '.$row[2].'
-                    </div>
-                </div>
+                    </a>
                     ' ;
                 }
 
@@ -87,7 +90,7 @@
 
                 <div class="bookDetails">
                     <div class="bookImgContainer">
-                        <div class="bookImg">
+                        <div class="bookImg" >
                             <img src="./img/books/void.jpg" alt="" style="height: 150px; width: 150px;">
                         </div>
                     </div>

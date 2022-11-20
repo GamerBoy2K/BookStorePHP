@@ -7,7 +7,7 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "GET"){
         $productID=$_GET['product'];
-
+        
     }else{
         echo "Error! Not a Get request";
     }
