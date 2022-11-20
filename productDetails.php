@@ -20,7 +20,7 @@
 
 <style>
     .container{
-        padding: 3% 5% 3% 2%;
+        padding: 10% 5% 3% 2%;
         display: flex;
         flex-wrap: wrap;
         max-height: 70%;
