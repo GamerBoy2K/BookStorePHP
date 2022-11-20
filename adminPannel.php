@@ -34,7 +34,7 @@
         </div>
 
         <div class="managementBox">
-            <a href="#">Manage Inventory</a>
+            <a href="./addBook.php">Add a Book</a>
         </div>
 
         <div class="managementBox">
