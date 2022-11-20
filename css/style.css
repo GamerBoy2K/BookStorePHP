@@ -270,6 +270,8 @@ body{
 
 .bookItems{
     display: flex;
+    
+    flex-wrap: wrap;
 }
 
 .bookDetails{
