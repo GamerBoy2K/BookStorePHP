@@ -71,7 +71,7 @@
                         <div class="bookDetails">
                             <div class="bookImgContainer">
                                 <div class="bookImg">
-                                    <img src="./'.$row[3].'" alt="" style="height: 150px; width: 150px;">
+                                    <img src="./'.$row[3].'" alt="" style="max-height: 150px; max-width: 150px;">
                                 </div>
                             </div>
                             <div class="bookName">

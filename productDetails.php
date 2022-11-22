@@ -11,6 +11,13 @@
         $productID=$_GET['product'];
         $bookDetailsSQL="SELECT * from `product` where product_id='$productID'";
         $result=mysqli_query($conn,$bookDetailsSQL);
+
+        $userRow=mysqli_num_rows($result);
+
+        if($userRow==0){
+            header("location: 404.php");
+        }
+
         $details=mysqli_fetch_array($result);
     }else{
         echo "Error! Not a Get request";
@@ -20,7 +27,7 @@
 
 <style>
     .container{
-        padding: 10% 5% 3% 2%;
+        padding: 5% 5% 3% 2%;
         display: flex;
         flex-wrap: wrap;
         max-height: 70%;
@@ -28,7 +35,11 @@
 
     .productImage{
         max-width: 50%;
-        max-height: 60%;
+        max-height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
     }
 
     .productImage img{
@@ -38,20 +49,22 @@
 
 
     .productInfo{
-        max-width: 90%;
+        max-width: 100%;
+        padding-top: 50px;
     }
 
     .productTitle{
-        max-width: 90%;
+        /* max-width: 90%; */
     }
 
     .buyNow{
         padding: 20px 15px;
         background-color: #4a40ad;
-        max-width: 40%;
+        /* max-width: 40%; */
         text-align: center;
         font-weight: bolder;
         color: white;
+        max-width: 100px;
     }
 
 </style>
@@ -75,9 +88,9 @@
                 </div>
 
                 <div class="buttonBuy">
-                    <div class="buyNow">
-                        Buy Now
-                    </div>
+                    <form action="order.php" method="POST">
+                        <button type="submit" class="buyNow" name="product" value="'.$details[0].'">Buy Now</button>
+                    </form>
                 </div>
             </div>
         </div>
