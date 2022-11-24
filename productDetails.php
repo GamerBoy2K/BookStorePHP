@@ -53,10 +53,6 @@
         padding-top: 50px;
     }
 
-    .productTitle{
-        /* max-width: 90%; */
-    }
-
     .buyNow{
         padding: 20px 15px;
         background-color: #4a40ad;
