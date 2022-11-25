@@ -1,4 +1,16 @@
 <?php
+    session_start();
+    if($_SESSION["adminLogged"]==true){
+        echo"<h3>Hello Admin ". $_SESSION["username"] ."</h3>";
+    }else{
+        header("location: adminLogin.php");
+        exit;
+    }
+
+?>
+
+
+<?php
 
     include 'dbConnect.php';
     if($_SERVER["REQUEST_METHOD"] == "GET"){
