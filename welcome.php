@@ -48,11 +48,11 @@
 
     <div class="adminContainer">
         <div class="managementBox">
-            <a href="index.php">home</a>
+            <a href="index.php">Home</a>
         </div>
 
         <div class="managementBox">
-            <a href="#">Order History</a>
+            <a href="./userAllOrder.php">Order History</a>
         </div>
 
         <div class="managementBox">
