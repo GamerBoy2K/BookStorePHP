@@ -138,6 +138,14 @@ button{
 </head>
 
 
+<?php
+    session_start();
+    if($_SESSION["logged"]==true){
+        header("location: welcome.php");
+    }
+
+?>
+
 
 <?php
 

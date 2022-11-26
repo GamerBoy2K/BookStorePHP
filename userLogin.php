@@ -137,6 +137,14 @@ button{
     </style>
 </head>
 
+<?php
+    session_start();
+    if($_SESSION["adminLogged"]==true){
+        echo"<h3>Hello Admin ". $_SESSION["username"] ."</h3>";
+        header("location: adminPannel.php");
+    }
+
+?>
 
 <?php
 
