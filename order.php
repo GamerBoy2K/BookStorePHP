@@ -63,7 +63,7 @@
         '
     ?>
 
-    <form action="" method="post">
+    <form action="./orderConfirm.php" method="post">
         <div class="customerData">
             <label for="customerName">Customer Full Name</label>
             <input type="text" name="customerName" placeholder="Enter The Cusomer Name" id="customerName" required>   
@@ -84,6 +84,8 @@
             <textarea name="customerAddress" id="customerAddress" cols="30" rows="10" required></textarea>
         </div>
 
+        <input type="hidden" name="product_id" value="<?php echo $productID?>">
+        <input type="hidden" name="product_price" value="<?php echo $details[2]?>">
         <div class="submitButton">
             <input type="submit" value="Place Order">
         </div>

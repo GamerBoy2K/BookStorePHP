@@ -56,7 +56,11 @@
         </div>
 
         <div class="managementBox">
-            <a href="#">Manage Books</a>
+            <a href="./allOrder.php">All Orders</a>
+        </div>
+
+        <div class="managementBox">
+            <a href="./allBooks.php">Manage Books</a>
         </div>
 
         <div class="managementBox">
