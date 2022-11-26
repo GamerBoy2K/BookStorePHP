@@ -4,7 +4,7 @@
     <div class="mainPage" style="padding-top: 80px;">
         <div class="log">
             <?php
-                echo "Checking the PHP\nHello";
+                //echo "Checking the PHP\nHello";
             ?>
         </div>
 
