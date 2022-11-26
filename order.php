@@ -21,6 +21,7 @@
         $details=mysqli_fetch_array($result);
     }else{
         echo "Error! Not a POST request";
+        header('location: index.php');
     }
 
 ?>
@@ -66,22 +67,22 @@
     <form action="./orderConfirm.php" method="post">
         <div class="customerData">
             <label for="customerName">Customer Full Name</label>
-            <input type="text" name="customerName" placeholder="Enter The Cusomer Name" id="customerName" required>   
+            <input type="text" name="customerName" placeholder="Enter The Cusomer Name" id="customerName" minlength="3" maxlength="250" required>   
         </div>
         
         <div class="customerData">
             <label for="customerEmail">Customer Email</label>
-            <input type="email" name="customerEmail" placeholder="Enter Billing Email Address" id="customerEmail" required>
+            <input type="email" name="customerEmail" placeholder="Enter Billing Email Address" id="customerEmail" minlength="3" maxlength="250" required>
         </div>
         
         <div class="customerData">
             <label for="customerPhone">Customer Phone Number</label>
-            <input type="tel" name="customerPhone" id="customerPhone" placeholder="Enter shipping Phone Number" required>
+            <input type="text" name="customerPhone" id="customerPhone" placeholder="Enter shipping Phone Number" minlength="6" maxlength="10" pattern="\d{6,10}" required>
         </div>
         
         <div class="customerData">
             <label for="customerAddress">Full Shipping Address</label>
-            <textarea name="customerAddress" id="customerAddress" cols="30" rows="10" required></textarea>
+            <textarea name="customerAddress" id="customerAddress" cols="30" rows="10" minlength="3" maxlength="550" required></textarea>
         </div>
 
         <input type="hidden" name="product_id" value="<?php echo $productID?>">
