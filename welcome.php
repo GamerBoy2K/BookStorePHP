@@ -17,9 +17,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wecome - <?php echo"$username" ?></title>
 </head>
+
+
 <body>
-    <a href="index.php">home</a>
-    <a href="#">Order History</a>
-    <a href="userLogout.php">Log Out</a>
+
+<style>
+    *{
+        /*background-color: antiquewhite;*/
+    }
+    .adminContainer{
+        display: flex;
+        background-color: antiquewhite;
+        max-width: 90%;
+        max-height: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .managementBox{
+        padding: 5%;
+        background-color: #d9d0d0;
+        margin: 15px;
+        min-width: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+</style>
+
+    <div class="adminContainer">
+        <div class="managementBox">
+            <a href="index.php">home</a>
+        </div>
+
+        <div class="managementBox">
+            <a href="#">Order History</a>
+        </div>
+
+        <div class="managementBox">
+            <a href="userLogout.php">Log Out</a>
+        </div>
+    </div>
 </body>
 </html>
