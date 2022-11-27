@@ -41,7 +41,7 @@
         $username=$_SESSION["username"];
         //echo $username.'dfghjk';
         include 'dbConnect.php';
-        $SQL='select * from order_details where user_id='.$username.'';
+        $SQL='select * from order_details where user_id="'.$username.'"';
         $result=mysqli_query($conn,$SQL);
 
         while ($row = mysqli_fetch_array($result))  {
