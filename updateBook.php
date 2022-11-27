@@ -67,7 +67,28 @@
             <input type="text" class="form-control" name="BookPrice" value="<?php echo''.$details[2].''; ?>">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="exampleRadios1" value="1" checked required>
+            <label class="form-check-label" for="exampleRadios1">
+                For Child
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="exampleRadios2" value="2">
+            <label class="form-check-label" for="exampleRadios2">
+                For Teenage
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="category" id="exampleRadios3" value="3">
+            <label class="form-check-label" for="exampleRadios3">
+                For Adult
+            </label>
+        </div>
+
+        <input type="hidden" name="bookID" value="<?php echo $productID ?>">
+
+        <button type="submit" class="btn btn-primary">Update</button>
         </form>
     </div>
     
