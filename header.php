@@ -54,8 +54,8 @@
             </ul>
         </div>
         <label for="show-search" class="search-icon"><i class="fa fa-search"></i></label>
-        <form action="#" class="search-box">
-            <input type="text" placeholder="Type Something to Search..." required>
+        <form action="./search.php" class="search-box" method="GET">
+            <input type="text" name="searchItem" placeholder="Type Something to Search..." required>
             <button type="submit" class="go-icon"><i class="fa fa-long-arrow-right"></i></button>
         </form>
 
