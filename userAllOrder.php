@@ -26,6 +26,7 @@
         <thead>
             <tr>
             <th scope="col">Order ID</th>
+            <th scope="col">Status</th>
             <th scope="col">Product Name</th>
             <th scope="col">Date Time</th>
             <th scope="col">Shipping Name</th>
@@ -48,9 +49,19 @@
             $productNameSQL='select * from product where product_id='.$row[2].'';
             $productResult=mysqli_query($conn,$productNameSQL);
             $productArray=mysqli_fetch_array($productResult);
+            if($row[3]==0){
+                $statusOrder="Canceled";
+            }elseif($row[3]==1){
+                $statusOrder="Processing";
+            }elseif($row[3]==2){
+                $statusOrder="Shipped";
+            }elseif($row[3]==3){
+                $statusOrder="Delivered";
+            }
             echo'
                 <tr>
                     <th scope="row">'. $row[0].'</th>
+                    <td>'. $statusOrder.'</td>
                     <td>'. $productArray[1].'</td>
                     <td>'. $row[4].'</td>
                     <td>'. $row[5].'</td>

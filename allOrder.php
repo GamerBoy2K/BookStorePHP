@@ -27,6 +27,7 @@
         <thead>
             <tr>
             <th scope="col">Order ID</th>
+            <th scope="col">Status</th>
             <th scope="col">User Name</th>
             <th scope="col">Product ID</th>
             <th scope="col">Date Time</th>
@@ -46,9 +47,19 @@
         $result=mysqli_query($conn,$SQL);
 
         while ($row = mysqli_fetch_array($result))  {
+            if($row[3]==0){
+                $statusOrder="Canceled";
+            }elseif($row[3]==1){
+                $statusOrder="Processing";
+            }elseif($row[3]==2){
+                $statusOrder="Shipped";
+            }elseif($row[3]==3){
+                $statusOrder="Delivered";
+            }
             echo'
                 <tr>
                     <th scope="row">'. $row[0].'</th>
+                    <td>'. $statusOrder.'</td>
                     <td>'. $row[1].'</td>
                     <td>'. $row[2].'</td>
                     <td>'. $row[4].'</td>
