@@ -72,7 +72,7 @@
         } else {
             $insert_sql="INSERT INTO `product` (`title`, `price`) VALUES ('$product_title', '$product_price')";
             $results=mysqli_query($conn,$insert_sql);
-            echo "Sorry, there was no file.";
+            echo "Done, but there was no Image.";
             
         }
         

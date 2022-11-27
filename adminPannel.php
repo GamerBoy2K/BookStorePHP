@@ -21,9 +21,9 @@
 
 
 <style>
-    *{
-        /*background-color: antiquewhite;*/
-    }
+    /**{
+        background-color: antiquewhite;
+    }*/
     .adminContainer{
         display: flex;
         background-color: antiquewhite;
