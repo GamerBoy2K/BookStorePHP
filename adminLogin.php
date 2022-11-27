@@ -200,6 +200,9 @@ button{
             <a href="./userLogin.php" style="text-decoration: none;"><div class="go"><i class="fa fa-user"></i>  User</div></a>
             <!-- <a href="#" style="text-decoration: none;"><div class="fb"><i class="fa fa-users"></i>  Seller</div></a>
          -->
+
+         <a href="./index.php" style="text-decoration: none;"><div class="fb"><i class="fa fa-home"></i>  Home</div></a>
+
         </div>
     </form>
 
