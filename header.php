@@ -20,17 +20,17 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li>
-                <a href="#" class="desktop-link">Features</a>
+                <a href="#" class="desktop-link">Category</a>
                 <input type="checkbox" id="show-features">
-                <label for="show-features">Features</label>
+                <label for="show-features">Category</label>
                 <ul>
-                <li><a href="#">Drop Menu 1</a></li>
-                <li><a href="#">Drop Menu 2</a></li>
-                <li><a href="#">Drop Menu 3</a></li>
-                <li><a href="#">Drop Menu 4</a></li>
+                <li><a href="./indexChild.php">Children Books</a></li>
+                <li><a href="./indexTeen.php">Teenager Books</a></li>
+                <li><a href="./indexAdult.php">Adult Books</a></li>
                 </ul>
             </li>
-            <li>
+
+            <!-- <li>
                 <a href="#" class="desktop-link">Services</a>
                 <input type="checkbox" id="show-services">
                 <label for="show-services">Services</label>
@@ -49,7 +49,8 @@
                     </ul>
                 </li>
                 </ul>
-            </li>
+            </li> -->
+
             <li><a href="#">Feedback</a></li>
             </ul>
         </div>
