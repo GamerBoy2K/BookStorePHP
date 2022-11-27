@@ -285,7 +285,7 @@ h3 span{
 .bookItems{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .bookDetails{
