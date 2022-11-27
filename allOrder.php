@@ -57,7 +57,7 @@
                     <td>'. $row[7].'</td>
                     <td>'. $row[8].'</td>
                     <td>'. $row[9].'</td>
-                    <td><a href="./updateOrder.php?bookID=' . $row[0].'">EDIT</a></td>
+                    <td><a href="./updateOrder.php?orderID=' . $row[0].'">EDIT</a></td>
                 </tr>
             
             ';

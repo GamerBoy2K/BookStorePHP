@@ -88,7 +88,19 @@
 
         <input type="hidden" name="bookID" value="<?php echo $productID ?>">
 
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" name="action" value="update" class="btn btn-primary">Update</button>
+        <?php
+            if($details[4]==0){
+                echo '
+                <button type="submit" name="action" value="delete" class="btn btn-danger">Delete</button>
+                ';
+            }/*else{
+                echo'
+                <button type="submit" name="action" value="delete" class="btn btn-danger" disabled>Delete</button>
+                ';
+            }*/
+        ?>
+        
         </form>
     </div>
     
