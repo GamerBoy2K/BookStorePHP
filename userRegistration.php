@@ -60,29 +60,60 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <style>
     form{
         margin-top: 100px;
+        border: black solid 2px;
+        border-radius: 5%;
+        padding: 15px;
 
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .inputBox{
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+    }
+
+    .buttonUp{
+        display: flex;
+        background-color: #303030;
+        color: white;
+        padding: 5%;
+        border-radius: 10px;
     }
 </style>
 
 
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-        <h3>User Registration Here</h3>
+<div class="container">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <h3>User Registration Here</h3>
 
-        <label for="username" >Username</label>
-        <input type="text" placeholder="Email" id="username" name="username" minlength="3" maxlength="20" required>
+            <div class="inputBox">
+                <label for="username" >Username</label>
+                <input type="text" placeholder="Username" id="username" name="username" minlength="3" maxlength="20" required>
+            </div>
 
-        <label for="password" >Password</label>
-        <input type="password" placeholder="Password" id="password" name="password" minlength="3" maxlength="30" required>
+            <div class="inputBox">
+                <label for="password" >Password</label>
+                <input type="password" placeholder="Password" id="password" name="password" minlength="3" maxlength="30" required>
+            </div>
 
-        <label for="cpassword" >Confirm Password</label>
-        <input type="password" placeholder="Retype your Password" id="cpassword" name="cpassword" maxlength="30" required>
+            <div class="inputBox">
+                <label for="cpassword" >Confirm Password</label>
+                <input type="password" placeholder="Retype your Password" id="cpassword" name="cpassword" maxlength="30" required>
+            </div>
+            
+            <button class="buttonUp">Sign Up</button>
 
-        <button>Sign Up</button>
-
-        <div class="signup">
-            <a href="./userLogin.php">Already have an account? login now</a>
-        </div>
+            <div class="inputBox">
+                <a href="./userLogin.php">Already have an account? login now</a>
+            </div>
     </form>
+</div>
+
 
 
 
