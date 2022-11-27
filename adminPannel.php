@@ -50,15 +50,19 @@
 
     <div class="adminContainer">
         <div class="managementBox">
-            <a href="#">Pending Orders</a>
+            <a href="./allNewOrder.php">New Orders</a>
         </div>
 
         <div class="managementBox">
-            <a href="#">Ongoing Orders</a>
+            <a href="./allShippedOrder.php">Shipped Orders</a>
         </div>
 
         <div class="managementBox">
-            <a href="#">Past Orders</a>
+            <a href="./allDeliveredOrder.php">Delivered Orders</a>
+        </div>
+
+        <div class="managementBox">
+            <a href="./allCanceledOrder.php">Canceled Orders</a>
         </div>
 
         <div class="managementBox">

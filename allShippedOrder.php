@@ -43,7 +43,7 @@
         <tbody>
     <?php    
         include 'dbConnect.php';
-        $SQL='select * from order_details';
+        $SQL='select * from order_details where statusOrder=2';
         $result=mysqli_query($conn,$SQL);
 
         while ($row = mysqli_fetch_array($result))  {
