@@ -6,7 +6,7 @@
 
 
 <div class="newBooks">
-    <h3 class="topic">Old Books</h3>
+    <h3 class="topic">Searched Books</h3>
     <div class="bookItems">
 
         <?php

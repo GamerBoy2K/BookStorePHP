@@ -95,7 +95,7 @@
 
 </head>
 <body>
-
+<?php include 'adminNavBar.php' ?>
 <style>
     .container{
         padding: 5%;

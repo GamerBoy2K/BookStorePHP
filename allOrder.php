@@ -21,7 +21,7 @@
 
 <body>
         
-
+<?php include 'adminNavBar.php' ?>
 
         <table class="table table-striped">
         <thead>
