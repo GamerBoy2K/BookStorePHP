@@ -37,7 +37,7 @@
         padding: 5%;
         background-color: #d9d0d0;
         margin: 15px;
-        min-width: 100px;
+        min-width: 120px;
         display: flex;
         justify-content: space-around;
     }
