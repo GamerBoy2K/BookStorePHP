@@ -49,9 +49,9 @@
                     </ul>
                 </li>
                 </ul>
-            </li> -->
+            </li> 
 
-            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Feedback</a></li> -->
             </ul>
         </div>
         <label for="show-search" class="search-icon"><i class="fa fa-search"></i></label>

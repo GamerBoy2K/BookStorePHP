@@ -1,5 +1,6 @@
 body{
     background-color: #d0d0d0;
+    padding-top: 70px;
     /*display: flex;*/
 }
 
@@ -8,6 +9,10 @@ body{
     padding-bottom: 10px;
 }
 
+a {
+  text-decoration: none !important;
+  color: #D1512D;
+}
 
 /*Nav bar design*/
 .wrapper{
@@ -258,14 +263,23 @@ body{
 
 
   .bannerImg{
-    width: 95%;
+    width: 100%;
     max-width: 100%;
-    padding: 0% 2.5% 0% 2.5%;
-    max-height: 50%;
+    /*padding: 0% 2.5% 0% 2.5%;*/
+    max-height: 300px;
 }
 
 .newBooks{
     padding: 20px;
+}
+
+.topic{
+  border-bottom: rgb(185, 31, 31) solid 2px;
+}
+
+h3 span{
+  background-color: navajowhite;
+  color: #3F0071;
 }
 
 .bookItems{
@@ -314,11 +328,10 @@ footer{
 }
 
 .footer-details{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .footer-details h3{

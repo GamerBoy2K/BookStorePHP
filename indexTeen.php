@@ -1,7 +1,7 @@
 
 <?php include 'header.php';?>
 
-<div class="mainPage" style="padding-top: 80px;">
+<div class="mainPage"  >
     <div class="log">
         <?php
             //echo "Checking the PHP\nHello";
@@ -9,11 +9,11 @@
     </div>
 
     <div class="banner">
-        <img class="bannerImg" src="./img/banner.jpg" alt="">
+        <img class="bannerImg" src="./img/Chlidren_banner.jpg" alt="">
     </div>
 
     <div class="newBooks">
-        <h3 class="topic">New Added Books</h3>
+        <h3 class="topic"><span>New Added Books</span></h3>
         <div class="bookItems">
 
             <?php 
@@ -55,7 +55,7 @@
 
 
     <div class="newBooks">
-        <h3 class="topic">Most Selling Books</h3>
+    <h3 class="topic"><span>Most Selling Books</span></h3>
         <div class="bookItems">
 
 
@@ -91,7 +91,7 @@
 
 
     <div class="newBooks">
-        <h3 class="topic">All Books</h3>
+    <h3 class="topic"><span>All Books</span></h3>
         <div class="bookItems">
 
 
