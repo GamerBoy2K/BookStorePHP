@@ -284,14 +284,15 @@ h3 span{
 
 .bookItems{
     display: flex;
-    
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .bookDetails{
     max-height: 350px;
     max-width: 200px;
     text-align: center;
+    width: 160px;
 }
 
 .bookImgContainer{
@@ -301,6 +302,7 @@ h3 span{
     padding: 10px 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .bookImg{

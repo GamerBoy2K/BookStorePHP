@@ -39,7 +39,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
 
     .productImage img{
@@ -50,7 +50,10 @@
 
     .productInfo{
         max-width: 100%;
-        padding-top: 50px;
+        /* padding-top: 50px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .buyNow{
