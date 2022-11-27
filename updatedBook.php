@@ -31,7 +31,7 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $actionButton=$_POST['action'];
         $bookID=$_POST['bookID'];
-        if($actionButton="delete"){
+        if($actionButton=="delete"){
             $bookUpdateSQL="DELETE FROM `product` WHERE `product`.`product_id` = $bookID;";
             $result=mysqli_query($conn,$bookUpdateSQL);
 
