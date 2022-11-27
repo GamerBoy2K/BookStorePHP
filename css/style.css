@@ -285,6 +285,8 @@ body{
     width: 150px;
     margin: 0 auto;
     padding: 10px 5px;
+    display: flex;
+    align-items: center;
 }
 
 .bookImg{
