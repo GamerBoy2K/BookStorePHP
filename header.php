@@ -18,7 +18,7 @@
         <div class="logo"><a href="index.php">Last Chapter</a></div>
             <ul class="links">
             <li><a href="index.php">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="./about.php">About</a></li>
             <li>
                 <a href="#" class="desktop-link">Category</a>
                 <input type="checkbox" id="show-features">

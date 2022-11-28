@@ -1,13 +1,14 @@
 <?php include 'header.php' ?>
 
-<!-- <style>
+<style>
     .container{
         display: flex;
+        justify-content: center;
     }
 
-    .aboutMe{
+    /* .aboutMe{
         flex: 1 100%;
-    }
+    } */
 
     .techDetails{
         display: flex;
@@ -17,8 +18,11 @@
 
     .techBox{
         display: flex;
+        flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
     }
-</style> -->
+</style> 
 
 <div class="container">
     <div class="aboutMe">
@@ -28,6 +32,10 @@
         <h5>Masters of Computer Applications</h5>
         <h5>Heritage Institute of Technology, Kolkata</h5>
     </div>
+
+</div>
+
+<div class="container">
 
     <div class="techDetails">
         <div class="techBox">
